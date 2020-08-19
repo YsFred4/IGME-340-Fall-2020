@@ -27,8 +27,8 @@
     - check to see the device type
     - Be sure that the words can still fit on the smallest phone screens available in the simulator (the iPhone SE)
 - The app has a custom App icon - designed and created by you - for all tablet and phone sizes. [Here is a tutorial on how to create an app icon](https://designmodo.com/ios-app-icon-photoshop). If you already have an image file you think could work as your icon (at least 1024x1024 pixels ideally), services like https://makeappicon.com/ios12icon will generate all of the required icon sizes for you. (*-3% if not done*)
-- Create a start up screen (on LaunchScreen.storyboard) that has the name of your app and your team members on it. Use an image (drag out a `UIImageView`), use auto-resizing or auto-layout to position it, and make sure it looks good on both iPhone and iPad. (*-3% if not done*)
-- BOTH partners bring the app to class installed on their iOS hardware (*-3% if not done*)
+- Create a start up screen (on LaunchScreen.storyboard) that has the name of your app and your team members on it. Use an image (drag out an `Image`), use auto-resizing or auto-layout to position it, and make sure it looks good on both phones and tablet sizes. (*-3% if not done*)
+- BOTH partners push the app to AppCenter and push to the professors device (*-3% if not done*)
 
 <hr><hr>
 
@@ -37,17 +37,14 @@
 ### Required App Features for Checkpoint #2 (see dropbox for due date)
 ***This is worth 10% of Project 1 grade***
 
-- The user can load at least 3 distinct sets of words. (see the *Tables I-III Walkthrough* for ideas on how to let the user choose something from a list). Because multiple view controllers will depend on the same data, ideally you have 
-			that data stored in just one place. 
-			Also, use some  emojis if you like  -  <a href="http://getemoji.com">http://getemoji.com</a> & <a href="http://emojipedia.org">http://emojipedia.org</a> - (<i>-6 if not done</i>)</li>
-			<li>Before loading a new word set the app needs to get rid of all of the old <code>UILabel</code>s. See this <a href="http://stackoverflow.com/questions/24312760/swift-how-will-i-remove-all-the-subviews-of-a-view/28516228#28516228">Stack Overflow post</a> on how to do this. (<i>-3 if not done</i>)</li>
-			<li>When new word sets are loaded, make sure that the words are not too close to the top or edges of the screen for the user to tap. Test for this fact on a real device. (<i>-2 if not done</i>)</li>
-			<li>Hide the status bar - you can do this on the main settings page for the app (<i>-2 if not done</i>)</li>
-			<li>Make sure your app name matches the name on the icon  - see <a href="">[developer.apple.com  - Updating the Display Name of Your App](https://developer.apple.com/library/content/qa/qa1823/_index.html) and [Making the app name on a device consistent with the name in iTunes Connect](https://developer.apple.com/library/archive/qa/qa1892/_index.html) (<i>-2 if not done</i>)</li>
-			<li>Get rid of all compiler warnings - including those for unused variables and broken Storyboard constraints (<i>-1 per compiler warning</i>)</li>
-			<li>Make sure you still meet all of the checkpoint #1 requirements (<i>-1 per requirement not met</i>)</li>
-		</ol>
-	</li>
+- The user can load at least 3 distinct sets of words. (see the *Tables I-III Walkthrough* for ideas on how to let the user choose something from a list). Because multiple view controllers will depend on the same data, ideally you have that data stored in just one place.	Also, use some  emojis if you like  -  <a href="http://getemoji.com">http://getemoji.com</a> & <a href="http://emojipedia.org">http://emojipedia.org</a> - (<i>-6 if not done</i>)
+- Before loading a new word set the app needs to get rid of all of the old <code>UILabel</code>s. See this <a href="http://stackoverflow.com/questions/24312760/swift-how-will-i-remove-all-the-subviews-of-a-view/28516228#28516228">Stack Overflow post</a> on how to do this. (<i>-3 if not done</i>)
+- When new word sets are loaded, make sure that the words are not too close to the top or edges of the screen for the user to tap. Test for this fact on a real device. (<i>-2 if not done</i>)
+- Hide the status bar - you can do this on the main settings page for the app (<i>-2 if not done</i>)
+- Make sure your app name matches the name on the icon  - see <a href="">[developer.apple.com  - Updating the Display Name of Your App](https://developer.apple.com/library/content/qa/qa1823/_index.html) and [Making the app name on a device consistent with the name in iTunes Connect](https://developer.apple.com/library/archive/qa/qa1892/_index.html) (<i>-2 if not done</i>)
+- Get rid of all compiler warnings - including those for unused variables and broken Storyboard constraints (<i>-1 per compiler warning</i>)
+- Make sure you still meet all of the checkpoint #1 requirements (<i>-1 per requirement not met</i>)
+
 
 <hr><hr>
 
@@ -57,26 +54,24 @@
 ### Required Final App Features  (see dropbox for due date)
 ***Late submissions will be not accepted***
 
-- The app should by now been thoroughly tested on iOS hardware:
-  - The app should display properly on either landscape OR portrait orientation, and on both iPhone and iPad. I recommend choosing one orientation for the app, either portrait or landscape, and making that the sole orientation of the app
+- The app should by now been thoroughly tested on hardware:
+  - The app should display properly on either landscape OR portrait orientation, and on both phones and tablet. I recommend choosing one orientation for the app, either portrait or landscape, and making that the sole orientation of the app
   - There should be no obvious usability issues
   - State Preservation. The user's current chosen category will be stored in `UserDefaults`, and the chosen word set will be displayed when they launch the app
-- The user can share their poetry (a screenshot of the entire poem) with others using Social Networks with the `UIActivityViewController` class
-- The user can choose a poetry background image from their Photo Library with the `UIImagePickerController` class
+- The user can share their poetry (a screenshot of the entire poem) with others using Social Networks with the Xamarin Essentials Share Plugin (https://docs.microsoft.com/en-us/xamarin/essentials/share?tabs=android)
+- The user can choose a poetry background image from their Photo Library (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/photo-picker)
 - The app meets all requirements of checkpoints #1 and #2 (*-5% per requirement not met*)
-- Because multiple view controllers will depend on the same data, you have a [Singleton](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html) [*model class*](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ModelObject.html) that manages/contains your application data
+- Because multiple pages will depend on the same data, you have a [Singleton](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html) [*model class*](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ModelObject.html) that manages/contains your application data
 - Code Conventions
   - Class names are capitalized, instance variables begin in lowercase (*-1 per incidence*)
   - Code files in the Xcode *Project Navigator* are organized in groups for example, *VC*, *Model*, *Lib*, *Helpers*, *Extensions* etc...(*-5 if not done*)
   - Get rid of all compiler warnings - including those for unused variables and broken Storyboard constraints - but don't wory about missing icon warnings (*-1 per compiler warning*)
-  - Use `//MARK: - Some Category -` in your view controller classes to organize your code - possible categories include:
-    - `ivars`
+  - Use `#region <Some Category>` in your view controller classes to organize your code - possible categories include:
+    - `variables`
     - `Private Helper Methods`
-    - `Storyboard Action Methods`
+    - `Public Methods`
     - `Initialization`
-    - `View Lifecycle`
-    - `GestureRecognizer Action Methods`
-    - `UIImagePickerController Delegate Methods`
+    - `GestureRecognizer Methods`
     - and so on
   - If the app crashes, there will be an additional penalty of -10%
 
@@ -113,7 +108,7 @@
 
 ### Hint #1
 The easiest way to add spaces to your magnets is to do so right after you create the label  - and to use string interpolation like so in your label creation loop:
-`label.text = " \(word) "`
+`label.text = " <word> ";`
 
 ### Hint #2
 - Animating your magnets when they first appear on the screen or when a word category is changed is a nice effect. Below is code that I have running in my `placeWords()` method - in the loop that creates the magnets
@@ -149,20 +144,9 @@ DispatchQueue.main.asyncAfter(deadline: fireTime){
 ### Hint #4
 *Sick of everything in your app being gray?*
 
-`UIAppearance` is a protocol on many UIKit classes that allows you to change the styling of UI elements for either your entire app, or just for for specific elements. Here is an easy quick start:
+Xamarin controls allows you to change the styling of UI elements for either your entire app, or just for for specific elements. Styles (or CSS stylesheets) can be used to have a consistant look and feel for all of your pages.
 
-- Add the following to the `application - didFinishLaunchingWithOptions()` method in **AppDelegate.swift**:
-
-```swift
-// be sure to pick better colors!
-UINavigationBar.appearance().backgroundColor = UIColor.green
-let barTintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1)
-UIToolbar.appearance().barTintColor = barTintColor
-UIBarButtonItem.appearance().tintColor = UIColor.purple
-```
-
-- See the "Using UIAppearance" PDF in mycourses
-- See this tutorial for an introduction: https://www.raywenderlich.com/1625-uiappearance-tutorial-getting-started
+- See this tutorial for an introduction: https://docs.microsoft.com/en-us/xamarin/get-started/quickstarts/styling?pivots=windows
 
 
 ### Hint #5
@@ -171,32 +155,11 @@ See the **UIInterpolatingMotionEffect Notes** PDF in mycourses to see how to add
 
 
 ### Hint #6
-- When doing the final testing your app, be sure to delete it off of the simulator and your iOS device, reinstall it, and be sure that it works in the "first run" state.
-- This is necessary to do so that you can be 100% sure that your `UserDefaults` code is properly written
+- When doing the final testing your app, be sure to delete it off of the simulator and your device, reinstall it, and be sure that it works in the "first run" state.
+- This is necessary to do so that you can be 100% sure that your settings code is properly written
 
-### Hint #7
 
-- for dependency injection, create the `ViewController` progrmmatically, in `AppDelegate.swift`
-
-```swift
- self.window = UIWindow(frame: UIScreen.main.bounds)
-        
- // In project directory storyboard looks like Main.storyboard,
- // you should use only part before ".storyboard" as it's name,
- // so in this example name is "Main".
- let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        
-// controller identifier sets up in storyboard utilities
-// panel (on the right), it called Storyboard ID
-let viewController = storyboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
-viewController.wordListMgr = WordListManager.shared
-viewController.selectedCategory = WordListManager.shared.currentCategory
-        
-self.window?.rootViewController = viewController
-self.window?.makeKeyAndVisible()
-```
-
-<hr><hr>
+<hr>
 
 <a id="screenshots"></a>
 

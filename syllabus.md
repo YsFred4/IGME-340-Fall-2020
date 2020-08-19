@@ -14,7 +14,7 @@ IGME-330 Rich Media Web Application Development I
 - Teaching Assistant: TBA
 - Office:  Discord Server
 - Email: steve.maier@rit.edu
-- Discord Server: https://discord.gg/AhFVQ5v
+- Discord Server: https://discord.gg/vUJR2fV
 - Discord Id: Ysfred4#4231
 - Office hours: 
   - MWF 9:00PM - 10:00PM on Discord

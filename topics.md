@@ -3,52 +3,70 @@
 ## Weekly
 
 ### Week 1
-
-- Intro to Xcode
-    - playgrounds
-    - navigator area
-    - editor area
-    - utilities area
-    - choosing a simulator
-    - compiling and running
- - Swift
-   - variables and constants - `var` / `let`
-   - creating instances
-   - Types: strings, floats, ints
-   - explicit casting v. type interence
- - Cocoa Touch
-   - `UIView`, `UILabel`
-   - parent/child - `addSubview()`
-   - coordinate system
+- Intro to VS2019/Xamarin
+  - navigator area
+  - editor area
+  - utilities area
+  - choosing a simulator
+  - compiling and running
+ - Xamarin Layout \ XAML
+  - `StackLayout`, `Label`
+  - parent/child - `Children.Add`
+  - coordinate system
+ - Animations
+ - GestureRecognizers
  - Exercises
-   - Hello RIT-1
-   
+  - Hello RIT-1
+- Intro to App Center
+
 ### Week 2
-- Storyboard
-  - outlets
-  - actions
-- Swift
+- XAML
+  - Shell project type
+  - Hot-loading
+  - Navigation
+- C#
   - arrays
   - dictionaries
-  - functions
-- Installing Apps onto iOS devices
+  - lambda functions
+  - async/await
+  - File I/O and using JSON
+  - variables - `var`
+  - creating instances
+  - Types: strings, floats, ints
+  - explicit casting v. type interence
+- Debugging
+  - Regular Breakpoints
+  - Exception Breakpoints
+  - Conditional Breakpoints
+  - Step In/Step Over/Continue
+  - Stack Trace
+  - Profiling
+  - Throwing Exceptions
+  - Debugger Console
+- Setting up App Center
   
- ### Week 3
- - Creating a Custom Class - `Person.swift`
- - Model-View-Controller
+### Week 3
+- Mobile App Design
+  - Prototyping
+  - Application Definition Statement
+  - Navigation
+    - Navigation Controllers - "Drill Down" with Detail Views
+    - Tab Bar
+    - iPad Split View
+ - Creating a Custom Class - `Person.cs`
+ - Model-View-ViewModel
    - model contains and validates the data
+ - Data Binding
+  - INotifyPropertyChanged
  - Re-write *Motivator* to become *MVC Motivator*
  - App Design Exercise:
    - "Magnetic Poetry" App
- - Links:
-   - [Swift Language Guide](https://docs.swift.org/swift-book/)
-   - [iOS HIG](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
    
- ### Week 4
+### Week 4
  - Review *Monster HW*
    - add `didSet` property observer
    - add `description` method via - `CustomStringConvertible` - https://developer.apple.com/documentation/swift/customstringconvertible
- - Review *Motivator MVC Plus Bromides*
+ - Review *Motivator MVVM Plus Bromides*
    - *nil coalescing operator* - `??` - is like a ternary operator for optionals 
    - random array elements
    - class extensions
@@ -61,7 +79,7 @@
      - Demo setting up a splash screen
      - Everything you need for completing checkpoints #1 & #2 is posted!
      
- ### Week 5
+### Week 5
  - Topics needed for Project 1 - Deliverable #2:
    - Storyboard
      - autolayout
@@ -97,24 +115,28 @@
    - `UIAppearance`
    - `Kinetic Realism` & `UIInterpolatingMotionEffect`
    
+### Week 8
  
+### Week 9
+
+### Week 10
+
+### Week 11
+
+### Week 12
+
+### Week 13
+
+### Week 14
+- Testing
+ - Unit Testing
+ - *UI Testing*
+
 
 ## All Topics
 - Tools
   - Xcode
   - Playgrounds
-- Debugging
-  - Regular Breakpoints
-  - Exception Breakpoints
-  - Conditional Breakpoints
-  - Step In/Step Over/Continue
-  - Stack Trace
-  - Profiling
-  - Throwing Exceptions
-  - Debugger Console
-- Testing
- - Unit Testing
- - *UI Testing*
 - Swift Language Features and Concepts
   - Immutability
   - Type Inference
@@ -135,13 +157,6 @@
   - Composition
   - Separation of Concern
   - Singleton
-- Mobile App Design
-  - Prototyping
-  - Application Definition Statement
-  - Navigation
-    - Navigation Controllers - "Drill Down" with Detail Views
-    - Tab Bar
-    - iPad Split View
 - Foundation Classes
   - NSString & NSMutableString
   - NSArray & NSMutableArray
@@ -172,7 +187,6 @@ Calling Methods on Foundation classes
 Custom Classes
 Magnet App
 Concepts explored:
-GestureRecognizers
 Arrays
 Utilizing Camera (P1)
 Storing Data (P1)
